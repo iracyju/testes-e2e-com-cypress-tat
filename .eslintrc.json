@@ -9,11 +9,14 @@
     "plugin:cypress/recommended"
   ],
   "plugins": ["cypress"],
+  "ignorePatterns": ["cypress/e2e/2-advanced-examples/**"],
   "rules": {
-    "cypress/no-force": "error",                         // Proíbe uso de { force: true } — boa prática
-    "cypress/assertion-before-screenshot": "error",      // Exige asserção antes de tirar screenshot
-    "no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }], // Evita erro em variáveis não usadas
-    "no-console": "warn"                                 // Evita console.log em produção
+    "cypress/no-force": "error",
+    "cypress/assertion-before-screenshot": "error",
+    "cypress/no-unnecessary-waiting": "error",
+    "no-console": "warn",
+    "no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }]
   }
 }
+
 
