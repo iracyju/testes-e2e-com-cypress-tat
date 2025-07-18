@@ -1,6 +1,7 @@
 import { defineConfig } from 'cypress';
 
 export default defineConfig({
+   projectId: "r4v63f",
    chromeWebSecurity: false,
   e2e: {
    
@@ -8,10 +9,7 @@ export default defineConfig({
      env: {
   viewportWidthBreakpoint: 768,
 },
-
-    setupNodeEvents(on, config) {
-      // implement node event listeners here
-    },
+    
   }
 });
 
