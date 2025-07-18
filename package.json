@@ -1,7 +1,9 @@
 {
   "name": "testes-e2e-com-cypress",
   "version": "1.0.0",
+  "description": "Sample project to demonstrate e2e tests written with Cypress running on GitHub Actions",
   "type": "module",
+
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
