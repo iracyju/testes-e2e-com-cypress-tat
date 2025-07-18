@@ -1,7 +1,14 @@
 {
-  "extends": [
-    "plugin:cypress/recommended"
-  ],
+  "languageOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "globals": {
+      "cy": "readonly",
+      "Cypress": "readonly"
+    }
+  },
+  "plugins": ["cypress"],
+  "extends": ["plugin:cypress/recommended"],
   "rules": {
     "cypress/no-force": "error",
     "cypress/assertion-before-screenshot": "error",
