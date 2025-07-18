@@ -37,7 +37,7 @@ describe('Scenarios where authentication is a pre-condition', () => {
     
     () => {
     cy.visit('/')
-    cy.wait(2000)
+    cy.wait('@getNotes') 
    
 
 
